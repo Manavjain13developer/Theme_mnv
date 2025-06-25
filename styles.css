@@ -21,7 +21,49 @@ img {
 }
 
 .toggle-btn {
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 12px 24px;
+    margin-bottom: 30px;
     cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #6b73ff, #000dff);
+    color: white;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Change styles for light theme */
+.light-theme .toggle-btn {
+    background: linear-gradient(45deg, #fbd786, #f7797d);
+    color: black;
+}
+
+.light-theme .toggle-btn:hover {
+    box-shadow: 0 6px 18px rgba(255, 165, 0, 0.3);
+}
+
+.quote-box {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dark-theme .quote-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #555;
+}
+
+.light-theme .quote-box {
+    background-color: #f9f9f9;
+    border-color: #ddd;
 }
